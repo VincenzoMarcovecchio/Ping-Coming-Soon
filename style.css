@@ -1,0 +1,220 @@
+body {
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container {
+  width: 60%;
+  margin: 3rem auto 0 auto;
+}
+
+.logo-img {
+  display: block;
+  width: 6rem;
+  margin: 2rem auto;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: hsl(209, 33%, 12%);
+}
+
+.lighter {
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+}
+
+p {
+  text-align: center;
+  color: hsl(209, 33%, 12%);
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+form {
+  max-width: 600px;
+  margin: 0 auto 4rem auto;
+}
+
+.form-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 40px auto 5px auto;
+  position: relative;
+}
+
+.form-input {
+  position: relative;
+  width: 55%;
+  padding: 15px 30px;
+  border: 1px solid lightgray;
+  font-size: 18px;
+  border-radius: 999px;
+  font-weight: 300;
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: lightgray;
+  font-size: 15px;
+}
+
+.submit-button {
+  width: 30%;
+  background: hsl(223, 87%, 63%);
+  color: #fff;
+  border-radius: 999px;
+  border: none;
+  font-size: 17px;
+  transition: all 0.5s;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 5px 10px 0 hsl(0, 0%, 59%);
+}
+
+.submit-button:hover {
+  box-shadow: 0 5px 10px 0 hsl(0, 0%, 98%);
+}
+
+.email-address-error {
+  font-size: 0.68rem;
+  position: absolute;
+  top: 60px;
+  width: 90%;
+  margin: auto;
+  color: #ff5263;
+  text-align: left;
+  margin-bottom: 80px;
+  display: none;
+}
+
+.container2 {
+  height: 400px;
+  width: 600px;
+  margin: 1rem auto;
+  background-image: url(images/illustration-dashboard.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.fas {
+  color: red;
+  position: absolute;
+  right: 40%;
+  top: 15px;
+  opacity: 0.5;
+  visibility: hidden;
+}
+.social {
+  width: 20%;
+  margin: 0 auto 2rem;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.fab {
+  border: 1px solid hsl(0, 0%, 59%);
+  padding: 8px;
+  border-radius: 50%;
+  width: 25px;
+  height: 20px;
+  color: hsl(223, 87%, 63%);
+  text-align: center;
+  justify-content: center;
+}
+
+.fab:hover {
+  color: #fff;
+  background-color: hsl(223, 87%, 63%);
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (max-width: 850px) {
+  .email-address-error {
+    position: relative;
+    top: 8px;
+    font-size: 0.68rem;
+    width: 90%;
+    margin: auto;
+    color: #ff5263;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .container {
+    width: 90%;
+  }
+  p {
+    margin: 1rem auto;
+    font-size: 1rem;
+  }
+  .hero-text {
+    font-size: 1.7rem;
+    margin-top: 3rem;
+  }
+  .form-row {
+    width: 100%;
+    flex-direction: column;
+    margin: 40px auto 10px auto;
+  }
+
+  .form-input {
+    margin: auto;
+    width: 90%;
+    padding: 15px 0 15px 0;
+  }
+
+  .form-input::placeholder {
+    color: lightgray;
+    font-size: 13px;
+    padding-left: 25px;
+  }
+  .submit-button {
+    width: 100%;
+    padding: 15px 0 15px 0;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .fas {
+    color: red;
+    position: absolute;
+    right: 12%;
+    top: 15px;
+    opacity: 0.5;
+    visibility: hidden;
+  }
+
+  .container2 {
+    height: 300px;
+    width: 100%;
+    margin: 3rem auto;
+    background-image: url(images/illustration-dashboard.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  .social {
+    width: 40%;
+    margin: 0 auto 2rem;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+
+  @media screen and (max-width: 450px) {
+    .social {
+      width: 80%;
+      margin: 0 auto 2rem;
+      display: flex;
+      justify-content: center;
+      justify-content: space-evenly;
+    }
+  }
+}
